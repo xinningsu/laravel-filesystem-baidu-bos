@@ -1,6 +1,21 @@
 {
     "name": "xinningsu/laravel-filesystem-baidu-bos",
     "description": "Baidu BOS storage for Laravel, 百度对象存储作为Laravel文件存储。",
+    "keywords": [
+        "laravel",
+        "filesystem",
+        "laravel storage",
+        "laravel filesystem",
+        "filesystem baidu bos",
+        "baidu",
+        "bos",
+        "baidu bos",
+        "baidu object storage",
+        "百度",
+        "对象存储",
+        "百度对象存储"
+    ],
+    "homepage": "https://github.com/xinningsu/laravel-filesystem-baidu-bos",
     "license": "MIT",
     "authors": [
         {
