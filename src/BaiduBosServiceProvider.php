@@ -2,6 +2,7 @@
 
 namespace Sulao\LaravelFilesystem\BaiduBos;
 
+use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
@@ -32,10 +33,12 @@ class BaiduBosServiceProvider extends ServiceProvider
                 'options' => $config['options']
             ]);
 
-            return new Filesystem(new BaiduBosAdapter($client), [
+            $adapter = new BaiduBosAdapter($client);
+
+            return new FilesystemAdapter(new Filesystem($adapter, [
                 'disable_asserts' => $config['disable_asserts'],
                 'case_sensitive' => $config['case_sensitive'],
-            ]);
+            ]), $adapter);
         });
     }
 

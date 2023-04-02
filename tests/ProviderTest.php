@@ -29,6 +29,10 @@ class ProviderTest extends TestCase
         $this->assertTrue(
             Storage::delete('laravel_bos.txt')
         );
+
+        $this->assertFalse(
+            Storage::disk('bos2')->exists('laravel_bos.txt')
+        );
     }
 
     protected function getApp()

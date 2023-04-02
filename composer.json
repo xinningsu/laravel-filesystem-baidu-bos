@@ -24,9 +24,9 @@
         }
     ],
     "require": {
-        "php": ">=5.6",
-        "laravel/framework": "^5.0 || ^6.0 || ^7.0 || ^8.0",
-        "xinningsu/flysystem-baidu-bos": "^1.0.1"
+        "php": ">=8.0",
+        "laravel/framework": "^9.0 || ^10.0",
+        "xinningsu/flysystem-baidu-bos": "^3.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": ">=5.0",
